@@ -1,0 +1,20 @@
+[project]
+name = "mask"
+version = "0.1.0"
+description = "network identity policy engine"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+authors = [
+  { name = "Caleb Wodi", email = "calebwodi33@gmail.com" }
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
