@@ -1,5 +1,7 @@
 # calchiwo/mask
 
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+
 Mask is a network identity and policy engine.
 
 It defines how traffic behaves on the network by modeling identity, context, and intent, then producing a deterministic routing decision.
@@ -22,11 +24,16 @@ Mask produces:
 - logging posture
 - risk flags
 
-The output is a `RoutingDecision`.
+The output is a RoutingDecision.
 
 That decision is designed to be consumed by a lower execution layer.
 
 ## Core Model
+
+Network behavior should be programmable.
+
+Traditional VPNs operate as binary tunnels:
+connect or disconnect.
 
 Mask is built around a single flow:
 
@@ -111,6 +118,10 @@ The control layer remains isolated by design.
 - Unit tests in place
 
 This is the foundation layer.
+
+## License
+
+This project is License under Apache 2.0. See [LICENSE](LICENSE) for details
 
 ## Authour
 
